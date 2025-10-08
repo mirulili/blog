@@ -7,7 +7,7 @@ menu:
     main:
         weight: 5
         params: 
-            icon: caret-right
+            icon: face-smile
 ---
 
 # 이력서
