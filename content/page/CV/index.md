@@ -7,7 +7,7 @@ menu:
     main:
         weight: 5
         params: 
-            icon: face-smile-regular-full
+            icon: clipboard-smile
 ---
 
 
