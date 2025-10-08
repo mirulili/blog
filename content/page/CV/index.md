@@ -40,8 +40,7 @@ _BS in Computer Science (Expected Aug 2026)_
 ### 🧬 Team Leader — LLM Watermark Project *(Yonsei Univ.)*
 📅 Aug 2025 – Ongoing  
 
-> - Designed a robust watermark injection algorithm for open-source LLMs.  
-> - Achieved **>95% fidelity rate** against common model editing attacks.  
+> - Designing a robust watermark injection algorithm for open-source LLMs, aiming for >95% fidelity rate against common model editing attacks.
 
 ---
 
@@ -103,6 +102,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 | Language | Certification | Score |
 |-----------|----------------|--------|
+| Korean | Native |  |
 | English | IELTS | 7.0 |
 | English | OPIC | IH |
 
