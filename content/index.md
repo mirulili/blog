@@ -1,10 +1,11 @@
 ---
 title: "Home"
 date: 2025-10-08
-layout: "Home"
-slug: "Home"
+layout: "home"
+slug: "home"
 menu:
     main:
+        name: home
         weight: 1
         params: 
             icon: home
