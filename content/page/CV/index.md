@@ -7,7 +7,7 @@ menu:
     main:
         weight: 5
         params: 
-            icon: assets/icons/caret-right.svg
+            icon: caret-right
 ---
 
 # 이력서
