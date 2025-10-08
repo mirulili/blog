@@ -19,7 +19,7 @@ subtitle = "Computer Science student trained in CS principles. Experienced in de
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "img/avatar.jpeg"
 
 [article]
 headingAnchor = false
