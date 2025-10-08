@@ -1,13 +1,13 @@
 ---
-title: "CV"
+title: "Home"
 date: 2025-10-08
-layout: "CV"
-slug: "CV"
+layout: "Home"
+slug: "Home"
 menu:
     main:
-        weight: 5
+        weight: 1
         params: 
-            icon: clipboard-smile
+            icon: home
 ---
 
 
