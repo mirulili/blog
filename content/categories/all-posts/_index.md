@@ -1,5 +1,6 @@
 ---
 title: All Posts
+slug: all-posts
 description: 
 image:
 
