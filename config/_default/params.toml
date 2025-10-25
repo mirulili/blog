@@ -2,7 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "static/favicon.png"
+favicon = "/favicon.png"
 
 [footer]
 since = 2025
@@ -74,7 +74,7 @@ enabled = true
 [imageProcessing.content]
 enabled = true
 
-## Comments
+'''Comments
 [comments]
 enabled = true
 provider = "disqus"
@@ -148,3 +148,4 @@ clientSecret = ""
 [comments.cusdis]
 host = ""
 id = ""
+'''

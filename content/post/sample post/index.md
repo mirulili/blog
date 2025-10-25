@@ -1,7 +1,7 @@
 ---
 title: Sample Post
 description: to be edited
-slug: sample-post
+# slug: sample-post
 date: 2025-10-25 00:00:00+0000
 image: cover.jpg
 categories:
