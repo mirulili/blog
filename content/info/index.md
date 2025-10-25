@@ -16,8 +16,9 @@ menu:
 
 # 💻 **Heeji Kang**
 📧 heejikang.miru(at)gmail.com  
-😺 [Github](https://github.com/mirulili)
-🌐 [Website](https://mirulili.github.io)
+😺 [Github](https://github.com/mirulili)  
+🌐 [Website](https://mirulili.github.io)  
+✅ [BOJ Profile](https://www.acmicpc.net/user/whdmsgkfn)
 
 ---
 
@@ -50,8 +51,6 @@ _BS in Computer Science (Expected Aug 2026)_
 
 > - Designing a robust watermark injection algorithm for open-source LLMs, aiming for >95% fidelity rate against common model editing attacks.
 
----
-
 ### 💹 AI Finance Agent using MCP Server  
 🏆 *Koscom AI Agent Challenge 2025 Finalist*  
 📅 Sep 2025 – Ongoing  
@@ -81,15 +80,11 @@ _BS in Computer Science (Expected Aug 2026)_
 > - Developed cross-cultural communication skills.  
 > - Received personal mentorship from a senior engineer at a leading tech company.  
 
----
-
 ### 💖 Member — Bon Bon Volunteering Club *(Yonsei Univ.)*  
 📅 Mar 2021 – Jun 2021  
 
 > - Organized and hosted a university flea market.  
 > - Successfully raised funds, fully donated to local charity organizations.  
-
----
 
 ### 📚 Academic Outreach Mentor *(Coursework, Yonsei Univ.)*  
 📅 Sep 2018 – Dec 2018  
