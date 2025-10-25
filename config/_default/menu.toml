@@ -1,8 +1,8 @@
-Configure main menu and social menu
+# Configure main menu and social menu
 [[main]]
 identifier = "home"
 name = "Home"
-url = "https://github.com/mirulili/blog"
+url = "/"
 [main.params]
 icon = "home"
 newtab = true
