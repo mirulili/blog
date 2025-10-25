@@ -14,11 +14,8 @@ menu:
 
 -----
 
-# 💻 **Heeji Kang**
-📧 heejikang.miru(at)gmail.com  
-😺 [Github](https://github.com/mirulili)  
-🌐 [Website](https://mirulili.github.io)  
-✅ [BOJ Profile](https://www.acmicpc.net/user/whdmsgkfn)
+# **Heeji Kang**
+📧 heejikang.miru(at)gmail.com 😺 [Github](https://github.com/mirulili) 🌐 [Website](https://mirulili.github.io) ✅ [BOJ Profile](https://www.acmicpc.net/user/whdmsgkfn)
 
 ---
 
