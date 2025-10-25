@@ -1,7 +1,7 @@
 ---
 title: All Posts
 slug: all-posts
-description: 
+description: sample
 image:
 
 # Badge style
