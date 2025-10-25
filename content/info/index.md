@@ -15,8 +15,7 @@ menu:
 -----
 
 # 💻 **Heeji Kang**
-📧 heejikang.miru(at)gmail.com
-📧 heejikang(at)icloud.com
+📧 heejikang.miru(at)gmail.com  
 🌐 [github.com/mirulili](https://github.com/mirulili)
 
 ---
