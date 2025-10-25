@@ -1,6 +1,6 @@
 ---
 title: "Info"
-date: 2025-10-08
+date: 2025-10-25
 layout: "info"
 slug: "info"
 menu:
@@ -15,7 +15,8 @@ menu:
 -----
 
 # 💻 **Heeji Kang**
-📧 heejikang@icloud.com  
+📧 heejikang.miru(at)gmail.com
+📧 heejikang(at)icloud.com
 🌐 [github.com/mirulili](https://github.com/mirulili)
 
 ---
@@ -32,6 +33,13 @@ menu:
 _BS in Computer Science (Expected Aug 2026)_  
 
 - 📘 Relevant Coursework: Data Structures, Operating Systems, Machine Learning
+
+---
+
+## 🎯 Areas of Interest
+
+> - Generative AI & LLM  
+> - Software Development (Backend / System Programming)
 
 ---
 
@@ -54,7 +62,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 ---
 
-## 🧠 Technical Skills & Proficiency
+## 🧠 Technical Skills
 
 | Category | Details |
 |-----------|----------|
@@ -65,7 +73,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 ---
 
-## 💼 Experience
+## 💼 Extracurricular
 
 ### 🌏 Working Holiday Program — *Sydney, Australia*  
 📅 Mar 2023 – Nov 2023  
@@ -91,14 +99,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 ---
 
-## 🎯 Areas of Interest
-
-> - Generative AI & LLM  
-> - Software Development (Backend / System Programming)
-
----
-
-## 🌐 Languages & Certifications
+## 🌐 Languages
 
 | Language | Certification | Score |
 |-----------|----------------|--------|
