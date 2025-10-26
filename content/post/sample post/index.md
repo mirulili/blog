@@ -1,6 +1,6 @@
 ---
-title: DeepSeek-R1:\ Providing a New Meta of AI Model
-description: After reading "DeepSeek-R1:\ Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+title: DeepSeek-R1, Providing a New Meta of AI Model
+description: "After reading \"DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning\""
 slug: review-deepseek-r1
 date: 2025-10-25 00:00:00+0000
 image: # deepseek.png
@@ -18,7 +18,7 @@ This post discusses about DeepSeek-AI's paper which reveals their iconic reasoni
 The core model is DeepSeek-R1, and the main training method is Reinforcement Learning (RL). Reinforcement learning is a trial-and-error learning method that allows AI to learn better solutions on its own, by giving 'reward' for correct answers and 'penalty' for wrong answers when AI solves a problem. The question is that "How does AI make 'thinking' and 'inferring' complex problems?" It refers to the ability to logically find answers across multiple steps, not just by memorizing knowledge. OpenAI demonstrated this reasoning ability with a model called 'o1', but it kept it a secret how it made it. DeepSeek-R1 is a paper that presents DeepSeek-AI's own answer to the secret. The research team created and tested two versions of the model.
   
 ## First try: DeepSeek-R1-Zero (taming wild horses)
-The Idea is like this:
+The Idea is like this.
 > Should we not show any examples of correct answers (SFT) to AI, just let them solve the questions (mathematics, coding) and then reward them with 'Answer!' or 'Deng!' to learn reasoning on their own?
   
 Only Reinforcement Learning (RL) was applied to this basic model (DeepSeek-V3-Base) that taught nothing. In other words, they did not show examples of correct answers (SFT data) in advance, and they let them solve problems (mathematics, coding, etc.) on their own and only rewarded them according to the correct answers. The metaphor is to give a baby a block, say, "Build the tower," and then give him a candy only when the tower is finished. He never taught me how to stack it.
@@ -34,14 +34,14 @@ The 'wild horse' model proved its reasoning ability itself, with its AIME math s
 ## Second try: DeepSeek-R1 (Creating Elite Students)
 Based on R1-Zero's success (RL works) and limitations (bad readability), we're going to create a much more organized and powerful "elite" model. That's DeepSeek-R1. By way of comparison, this time we're going to enroll your baby in a systematic four-step "elite course."
   
-The training stage is 4 steps of pipeline:
-> **Step one (Cold Start, SFT)**:  
+The training stage is 4 steps of pipeline.
+> **Step one (Cold Start, SFT)**  
 It does not start like a 'wild horse.' First, it trains a small, easy-to-read, high-quality example of inference ("Cold Start" data). (→ "Now, this is how blocks stack up one by one.")  
-**Step 2 (Integration Reinforcement Learning, RL)**:  
+**Step 2 (Integration Reinforcement Learning, RL)**  
 The model who has mastered the basics is asked to solve math/coding problems and gets a 'correct answer' reward. Like in the case of 'R1-Zero', it also adds a 'verbal consistency reward' that gives penalty points for mixing languages. → "Now build a tower by yourself. I'll give you candy if you stack it up well."  
-**Step 3 (Data Buffet, SFT)**:  
+**Step 3 (Data Buffet, SFT)**  
 Now the model is pretty smart. Let this model solve the problem and only pick the 'answer' solution (Rejection Sampling). With 600,000 top-notch "reasoning answer sheets" and 200,000 "general conversation" data collected in this way, a total of 800,000 "elite textbooks" will be created, and the model will be retrained with these textbooks (SFT).  
-**Step 4 (Final Trim, RL)**:  
+**Step 4 (Final Trim, RL)**  
 Finally, we tune the final RL by comprehensively evaluating not only the reasoning ability (rules-based reward), but also "how useful" and "how safe" (using reward models) in the general conversation. (→ "You have to build a tower well and answer questions kindly to really rank first.")  
     
 Through these four steps, DeepSeek-R1 achieved the highest level of inference performance, equivalent to OpenAI-01-1217. Specifically, it scored a high Elo score of top 96.3% of human participants on CodeForces, a coding competition site, and 90.8% on the MMLU benchmark.
@@ -68,7 +68,7 @@ The 'Aha Moment' of 'R1-Zero' has become a big topic for AI researchers. This is
   
 People often say that DeepSeek is a much lighter model than ChatGPT. This part is the most interesting point of DeepSeek. When we say "ChatGPT," it usually means giant models like GPT-3.5 and GPT-4/4o, which are the opposite of "lightweight." "DeepSeek has become lighter" refers to open-source models created by "Distilling." Let's elaborate on what this means and why it's efficient.
   
-> What do you mean by "lightweight model"?
+> What does it mean by "lightweight model"?
 
 In AI models, 'weight' is determined by the number of 'parameters (parameters)'.
   
@@ -100,4 +100,3 @@ That's why DeepSeek-R1-Distill models, despite their smaller sizes like 7B, 14B,
   
 ## Conclusion  
 To conclude, DeepSeek showed that AI's "reasoning ability" can be significantly improved with only reinforcement learning (RL) without examples of correct answers (SFT). However, the outputs become messy when only RL is applied, so training on "easy-to-read" high-quality example data ("cold start") first and then applying RL was the best way to capture both readability and performance. The knowledge of this smart large model (DeepSeek-R1) proved that it can "distillate" small models to create small but very powerful inference models.
-
