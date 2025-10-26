@@ -1,6 +1,6 @@
 ---
-title: DeepSeek-R1: Providing a New Meta of AI Model
-description: After reading "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+title: DeepSeek-R1:\ Providing a New Meta of AI Model
+description: After reading "DeepSeek-R1:\ Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
 slug: review-deepseek-r1
 date: 2025-10-25 00:00:00+0000
 image: deepseek.jpg
