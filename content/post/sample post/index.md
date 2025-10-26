@@ -35,14 +35,14 @@ The 'wild horse' model proved its reasoning ability itself, with its AIME math s
 Based on R1-Zero's success (RL works) and limitations (bad readability), we're going to create a much more organized and powerful "elite" model. That's DeepSeek-R1. By way of comparison, this time we're going to enroll your baby in a systematic four-step "elite course."
   
 The training stage is 4 steps of pipeline.
-> **Step one (Cold Start, SFT)**  
-It does not start like a 'wild horse.' First, it trains a small, easy-to-read, high-quality example of inference ("Cold Start" data). (→ "Now, this is how blocks stack up one by one.")  
-**Step 2 (Integration Reinforcement Learning, RL)**  
-The model who has mastered the basics is asked to solve math/coding problems and gets a 'correct answer' reward. Like in the case of 'R1-Zero', it also adds a 'verbal consistency reward' that gives penalty points for mixing languages. → "Now build a tower by yourself. I'll give you candy if you stack it up well."  
+> **Step one (Cold Start, SFT)** - "Now, this is how blocks stack up one by one."  
+It does not start like a 'wild horse.' First, it trains a small, easy-to-read, high-quality example of inference ("Cold Start" data).  
+**Step 2 (Integration Reinforcement Learning, RL)** - "Now build a tower by yourself. I'll give you candy if you stack it up well."  
+The model who has mastered the basics is asked to solve math/coding problems and gets a 'correct answer' reward. Like in the case of 'R1-Zero', it also adds a 'verbal consistency reward' that gives penalty points for mixing languages.  
 **Step 3 (Data Buffet, SFT)**  
 Now the model is pretty smart. Let this model solve the problem and only pick the 'answer' solution (Rejection Sampling). With 600,000 top-notch "reasoning answer sheets" and 200,000 "general conversation" data collected in this way, a total of 800,000 "elite textbooks" will be created, and the model will be retrained with these textbooks (SFT).  
-**Step 4 (Final Trim, RL)**  
-Finally, we tune the final RL by comprehensively evaluating not only the reasoning ability (rules-based reward), but also "how useful" and "how safe" (using reward models) in the general conversation. (→ "You have to build a tower well and answer questions kindly to really rank first.")  
+**Step 4 (Final Trim, RL)** - "You have to build a tower well and answer questions kindly to really rank first."  
+Finally, we tune the final RL by comprehensively evaluating not only the reasoning ability (rules-based reward), but also "how useful" and "how safe" (using reward models) in the general conversation.  
     
 Through these four steps, DeepSeek-R1 achieved the highest level of inference performance, equivalent to OpenAI-01-1217. Specifically, it scored a high Elo score of top 96.3% of human participants on CodeForces, a coding competition site, and 90.8% on the MMLU benchmark.
   
