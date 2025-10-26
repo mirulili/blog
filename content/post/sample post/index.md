@@ -37,20 +37,20 @@ It does not start like a "wild horse." First, it trains a small, easy-to-read, h
 **Step 2 (Integration Reinforcement Learning, RL)** - *"Now build a tower by yourself. I'll give you candy if you stack it up well."*  
 The model who has mastered the basics is asked to solve math/coding problems and gets a *correct answer* reward. Like in the case of R1-Zero, it also adds a *verbal consistency reward* that gives penalty points for mixing languages.  
 **Step 3 (Data Buffet, SFT)**  
-Now the model is pretty smart. Let this model solve the problem and only pick the answer solution (Rejection Sampling). With 600,000 top-notch *reasoning answer sheets* and 200,000 *general conversation* data collected in this way, a total of 800,000 "elite textbooks" will be created, and the model will be retrained with these textbooks.  
+Now the model is pretty smart. Let this model solve the problem and only pick the answer solution (Rejection Sampling). With 600,000 top-notch "reasoning answer sheets" and 200,000 "general conversation" data collected in this way, a total of 800,000 "elite textbooks" will be created, and the model will be retrained with these textbooks.  
 **Step 4 (Final Trim, RL)** - *"You have to build a tower well and answer questions kindly to really rank first."*  
 Finally, we tune the final RL by comprehensively evaluating not only the reasoning ability (rules-based reward), but also *how useful* and *how safe* (using reward models) in the general conversation.  
     
 Through these four steps, DeepSeek-R1 achieved the highest level of inference performance, equivalent to OpenAI-01-1217. Specifically, it scored a high Elo score of top 96.3% of human participants on CodeForces, a coding competition site, and 90.8% on the MMLU benchmark.
   
 ## Key findings: "Distilling Knowledge"
-In this paper, the **Distillation** part is as important as the DeepSeek-R1 model itself. The initial problem is that DeepSeek-R1 is incredibly smart, but it's big and heavy (expensive) that it's hard for anyone to use. So the idea had come up: "What if we let 800,000 *elite textbooks (SFT data)* made in step 3 above be trained on small public models (Small LLM) like Llama or Qwen?"
+In this paper, the **Distillation** part is as important as the DeepSeek-R1 model itself. The initial problem is that DeepSeek-R1 is incredibly smart, but it's big and heavy (expensive) that it's hard for anyone to use. So the idea had come up: "What if we let 800,000 elite textbooks made in step 3 above be trained on small public models (Small LLM) like Llama or Qwen?"
   
 Just like that, they took a high-quality 800k dataset made in steps 2-3 above, and trained small public models. The result was a huge success. For example, "DeepSeek-R1-Distill-Qwen-32B" (32 billion parameter model) achieved 72.6% AIME and 94.3% MATH-500, which far outperforms most large models.
   
 Rather than training a small model hard with RL from scratch, it was much more efficient and performing to "distill" the inference method of a large model that had already become smart. Training the Qwen-32B (32 billion) model with this data, "DeepSeek-R1-Distill-Qwen-32B" achieved 72.6% AIME and 94.3% MATH-500. This is comparable to or better than OpenAI-01-mini. Even the smaller 14B (14 billion) model outperformed the existing 32B model (QwQ-32B).
   
-In conclusion, it is very difficult for a small model to acquire elite-level reasoning skills through RL on its own. However, simply imitating (learning) the *answer-solving process* created by an already smart big model (R1) can quickly and effectively transfer that knowledge.
+In conclusion, it is very difficult for a small model to acquire elite-level reasoning skills through RL on its own. However, simply imitating (learning) the "answer-solving process" created by an already smart big model (R1) can quickly and effectively transfer that knowledge.
   
 ## Real Word Usage
 Now let’s discuss the specialy regarding this model in real world. The paper was released in January 2025, and DeepSeek-AI released the model almost simultaneously with the publication of the paper. The most powerful full-version DeepSeek-R1 model can be used by companies or developers at a cost via API. Besides, the **knowledge distillation** models described above (e.g., DeepSeek-R1-Distill-Qwen-32B, DeepSeek-R1-Distill-Llama-70B, etc.) are ompletely free (Open Source) that developers worldwide have downloaded and used these models.
@@ -63,7 +63,7 @@ The "Aha Moment" of R1-Zero has become a big topic for AI researchers. This is b
   
 People often say that DeepSeek is a much lighter model than ChatGPT. This part is the most interesting point of DeepSeek. When we say ChatGPT, it usually means giant models like GPT-3.5 and GPT-4/4o, which are the opposite of **lightweight**. "DeepSeek has become lighter" refers to open-source models created by **Distilling**. Let's elaborate on what this means and why it's efficient.
   
-> What does it mean by *lightweight model*?
+> What does it mean by "lightweight model"?
 
 In AI models, *weight* is determined by the number of *parameters*.
   
@@ -71,7 +71,7 @@ In AI models, *weight* is determined by the number of *parameters*.
 
 This is where the model's *knowledge* is stored, similar to the synapse of the human brain. The more parameters, the more complex the model is, the more knowledge it can store, and the potential to be smarter.
   
-### *Lightweight* = Fewer parameters
+### Lightweight = Fewer parameters
 ChatGPT (GPT-4/4o), although private, experts estimate that the parameters will be well over a trillion (1 Trillion). This is a *super* model. In the case of DeepSeek, 7 billion (7B), 14 billion (14B), 32 billion (32B), and 70 billion (70B) lightweight models were unveiled in the DeepSeek-R1 paper.
 Just by looking at the numbers, there's a huge difference between 1,000,000,000+ and 7,000,000,000,000+, right? That's why DeepSeek's public models are called *lightweighted*.
   
@@ -81,7 +81,7 @@ Fewer parameters imply tremendous *efficiency* from many perspectives. First, it
   
 The second perspective can be accessibility. This is the core of the open-source model. ChatGPT only works on OpenAI's giant servers. We can only *borrow* via API. However, DeepSeek, the model file itself is open. Companies and individuals can download it and install it directly on their PC or server.
   
-The third criterion is speed. The amount (parameters) to calculate is small, so of course, the response speed (inference speed) is faster. Lastly, the customizing issue can be discussed. ChatGPT should use the completed model as it is. After downloading the model, DeepSeek can learn only our internal documents or specific area (e.g., law, healthcare) data to **easy fine-tuning to *our company-only AI* and *law-specialized AI*. The lightweight model is much cheaper to modify, too.
+The third criterion is speed. The amount (parameters) to calculate is small, so of course, the response speed (inference speed) is faster. Lastly, the customizing issue can be discussed. ChatGPT should use the completed model as it is. After downloading the model, DeepSeek can learn only our internal documents or specific area (e.g., law, healthcare) data to *easy fine-tuning* to our company-only AI and *aw-specialized AI. The lightweight model is much cheaper to modify, too.
   
 ## The Secret of "The Costly Rain"
 This is where the core of the DeepSeek paper comes in.
