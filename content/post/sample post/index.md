@@ -35,7 +35,7 @@ The 'wild horse' model proved its reasoning ability itself, with its AIME math s
 Based on R1-Zero's success (RL works) and limitations (bad readability), we're going to create a much more organized and powerful "elite" model. That's DeepSeek-R1. By way of comparison, this time we're going to enroll your baby in a systematic four-step "elite course."
   
 The training stage is 4 steps of pipeline.
-> **Step one (Cold Start, SFT)** - "Now, this is how blocks stack up one by one."  
+> **Step 1 (Cold Start, SFT)** - "Now, this is how blocks stack up one by one."  
 It does not start like a 'wild horse.' First, it trains a small, easy-to-read, high-quality example of inference ("Cold Start" data).  
 **Step 2 (Integration Reinforcement Learning, RL)** - "Now build a tower by yourself. I'll give you candy if you stack it up well."  
 The model who has mastered the basics is asked to solve math/coding problems and gets a 'correct answer' reward. Like in the case of 'R1-Zero', it also adds a 'verbal consistency reward' that gives penalty points for mixing languages.  
