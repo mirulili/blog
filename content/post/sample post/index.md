@@ -81,7 +81,7 @@ Fewer parameters imply tremendous *efficiency* from many perspectives. First, it
   
 The second perspective can be accessibility. This is the core of the open-source model. ChatGPT only works on OpenAI's giant servers. We can only *borrow* via API. However, DeepSeek, the model file itself is open. Companies and individuals can download it and install it directly on their PC or server.
   
-The third criterion is speed. The amount (parameters) to calculate is small, so of course, the response speed (inference speed) is faster. Lastly, the customizing issue can be discussed. ChatGPT should use the completed model as it is. After downloading the model, DeepSeek can learn only our internal documents or specific area (e.g., law, healthcare) data to *easy fine-tuning* to our company-only AI and *aw-specialized AI. The lightweight model is much cheaper to modify, too.
+The third criterion is speed. The amount (parameters) to calculate is small, so of course, the response speed (inference speed) is faster. Lastly, the customizing issue can be discussed. ChatGPT should use the completed model as it is. After downloading the model, DeepSeek can learn only our internal documents or specific area (e.g., law, healthcare) data to *easy fine-tuning* to our company-only AI and law-specialized AI. The lightweight model is much cheaper to modify, too.
   
 ## The Secret of "The Costly Rain"
 This is where the core of the DeepSeek paper comes in.
