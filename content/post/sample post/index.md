@@ -3,7 +3,7 @@ title: DeepSeek-R1:\ Providing a New Meta of AI Model
 description: After reading "DeepSeek-R1:\ Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
 slug: review-deepseek-r1
 date: 2025-10-25 00:00:00+0000
-image: deepseek.png
+image: # deepseek.png
 categories:
     - all-posts
 tags:
@@ -19,7 +19,7 @@ The core model is DeepSeek-R1, and the main training method is Reinforcement Lea
   
 ## First try: DeepSeek-R1-Zero (taming wild horses)
 The Idea is like this:
-> "Should we not show any examples of correct answers (SFT) to AI, just let them solve the questions (mathematics, coding) and then reward them with 'Answer!' or 'Deng!' to learn reasoning on their own?"
+> Should we not show any examples of correct answers (SFT) to AI, just let them solve the questions (mathematics, coding) and then reward them with 'Answer!' or 'Deng!' to learn reasoning on their own?
   
 Only Reinforcement Learning (RL) was applied to this basic model (DeepSeek-V3-Base) that taught nothing. In other words, they did not show examples of correct answers (SFT data) in advance, and they let them solve problems (mathematics, coding, etc.) on their own and only rewarded them according to the correct answers. The metaphor is to give a baby a block, say, "Build the tower," and then give him a candy only when the tower is finished. He never taught me how to stack it.
   
@@ -35,10 +35,14 @@ The 'wild horse' model proved its reasoning ability itself, with its AIME math s
 Based on R1-Zero's success (RL works) and limitations (bad readability), we're going to create a much more organized and powerful "elite" model. That's DeepSeek-R1. By way of comparison, this time we're going to enroll your baby in a systematic four-step "elite course."
   
 The training stage is 4 steps of pipeline:
-> **Step one (Cold Start, SFT)**: It does not start like a 'wild horse.' First, it trains a small, easy-to-read, high-quality example of inference ("Cold Start" data). (→ "Now, this is how blocks stack up one by one.")
-**Step 2 (Integration Reinforcement Learning, RL)**: The model who has mastered the basics is asked to solve math/coding problems and gets a 'correct answer' reward. Like in the case of 'R1-Zero', it also adds a 'verbal consistency reward' that gives penalty points for mixing languages. → "Now build a tower by yourself. I'll give you candy if you stack it up well."
-**Step 3 (Data Buffet, SFT)**: Now the model is pretty smart. Let this model solve the problem and only pick the 'answer' solution (Rejection Sampling). With 600,000 top-notch "reasoning answer sheets" and 200,000 "general conversation" data collected in this way, a total of 800,000 "elite textbooks" will be created, and the model will be retrained with these textbooks (SFT).
-**Step 4 (Final Trim, RL)**: Finally, we tune the final RL by comprehensively evaluating not only the reasoning ability (rules-based reward), but also "how useful" and "how safe" (using reward models) in the general conversation. (→ "You have to build a tower well and answer questions kindly to really rank first.")
+> **Step one (Cold Start, SFT)**:  
+It does not start like a 'wild horse.' First, it trains a small, easy-to-read, high-quality example of inference ("Cold Start" data). (→ "Now, this is how blocks stack up one by one.")  
+**Step 2 (Integration Reinforcement Learning, RL)**:  
+The model who has mastered the basics is asked to solve math/coding problems and gets a 'correct answer' reward. Like in the case of 'R1-Zero', it also adds a 'verbal consistency reward' that gives penalty points for mixing languages. → "Now build a tower by yourself. I'll give you candy if you stack it up well."  
+**Step 3 (Data Buffet, SFT)**:  
+Now the model is pretty smart. Let this model solve the problem and only pick the 'answer' solution (Rejection Sampling). With 600,000 top-notch "reasoning answer sheets" and 200,000 "general conversation" data collected in this way, a total of 800,000 "elite textbooks" will be created, and the model will be retrained with these textbooks (SFT).  
+**Step 4 (Final Trim, RL)**:  
+Finally, we tune the final RL by comprehensively evaluating not only the reasoning ability (rules-based reward), but also "how useful" and "how safe" (using reward models) in the general conversation. (→ "You have to build a tower well and answer questions kindly to really rank first.")  
     
 Through these four steps, DeepSeek-R1 achieved the highest level of inference performance, equivalent to OpenAI-01-1217. Specifically, it scored a high Elo score of top 96.3% of human participants on CodeForces, a coding competition site, and 90.8% on the MMLU benchmark.
   
@@ -51,7 +55,7 @@ Rather than training a small model hard with RL from scratch, it was much more e
 Training the Qwen-32B (32 billion) model with this data, "DeepSeek-R1-Distill-Qwen-32B" achieved 72.6% AIME and 94.3% MATH-500. This is comparable to or better than OpenAI-01-mini.
 Even the smaller 14B (14 billion) model outperformed the existing 32B model (QwQ-32B).
   
-To conclude, it is very difficult for a small model to acquire elite-level reasoning skills through RL on its own. However, simply imitating (learning) the "answer-solving process" created by an already smart big model (R1) can quickly and effectively transfer that knowledge.
+In conclusion, it is very difficult for a small model to acquire elite-level reasoning skills through RL on its own. However, simply imitating (learning) the "answer-solving process" created by an already smart big model (R1) can quickly and effectively transfer that knowledge.
   
 ## Real Word Usage
 Now let’s discuss the specialy regarding this model in real world. The paper was released in January 2025, and DeepSeek-AI released the model almost simultaneously with the publication of the paper. The most powerful full-version DeepSeek-R1 model can be used by companies or developers at a cost via API. Besides, the 'knowledge distillation' models described above (e.g., DeepSeek-R1-Distill-Qwen-32B, DeepSeek-R1-Distill-Llama-70B, etc.) are ompletely free (Open Source) that developers worldwide have downloaded and used these models.
@@ -87,7 +91,7 @@ The third criterion is speed. The amount (parameters) to calculate is small, so 
 ## The Secret of "The Costly Rain"
 This is where the core of the DeepSeek paper comes in.
 
-> "I understand the lightweight model, but isn't it going to be less efficient?"
+> If DeepSeek is a lightweight model, isn't it going to be less efficient?
 
 That's right. Usually, 7 billion (7B) parameter models cannot keep up with the intelligence of 1 trillion (1T) models. 
 However, as mentioned above, DeepSeek used the trick of "knowledge distillation." First, it creates a super-sized "teacher" model called "DeepSeek-R1," which may be smarter than GPT-4. (It is not lightweight) Then, 800,000 high-quality "answer courses" (elite textbooks) created by the "teacher" model. It trains the textbook on seven billion "student" models. As a result, the "student" model learns by compressing the reasoning method and knowledge of a trillion "teachers" even though it has seven billion small brains.
