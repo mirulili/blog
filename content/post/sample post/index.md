@@ -55,10 +55,10 @@ In conclusion, it is very difficult for a small model to acquire elite-level rea
 ## Real Word Usage
 Now let’s discuss the specialy regarding this model in real world. The paper was released in January 2025, and DeepSeek-AI released the model almost simultaneously with the publication of the paper. The most powerful full-version DeepSeek-R1 model can be used by companies or developers at a cost via API. Besides, the **knowledge distillation** models described above (e.g., DeepSeek-R1-Distill-Qwen-32B, DeepSeek-R1-Distill-Llama-70B, etc.) are ompletely free (Open Source) that developers worldwide have downloaded and used these models.
   
-### 'Blackbox' vs 'Glassbox'
+### "Blackbox" vs "Glassbox"
 Unlike OpenAI, which kept the "o1" model's training secret ("Blackbox"), DeepSeek transparently revealed their successful training pipelines as well as failed attempts such as "Process Reward Model (PRM)" and 'Monte Carlo Tree Exploration (MCTS) through this paper. This is considered an approach that contributes significantly to the development of the AI community as a whole.
   
-### Consideration of 'Inventive Ability'
+### Consideration of "Inventive Ability"
 The "Aha Moment" of R1-Zero has become a big topic for AI researchers. This is because simply the reward of correct/misanswer has shown the possibility that AI can learn the complex and high-order thinking ability of self-reflection.
   
 People often say that DeepSeek is a much lighter model than ChatGPT. This part is the most interesting point of DeepSeek. When we say ChatGPT, it usually means giant models like GPT-3.5 and GPT-4/4o, which are the opposite of **lightweight**. "DeepSeek has become lighter" refers to open-source models created by **Distilling**. Let's elaborate on what this means and why it's efficient.
