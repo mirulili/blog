@@ -83,7 +83,7 @@ The second perspective can be accessibility. This is the core of the open-source
   
 The third criterion is speed. The amount (parameters) to calculate is small, so of course, the response speed (inference speed) is faster. Lastly, the customizing issue can be discussed. ChatGPT should use the completed model as it is. After downloading the model, DeepSeek can learn only our internal documents or specific area (e.g., law, healthcare) data to *easy fine-tuning* to our company-only AI and law-specialized AI. The lightweight model is much cheaper to modify, too.
   
-## The Secret of "The Costly Rain"
+## The Secret of "The Cost Efficiency"
 This is where the core of the DeepSeek paper comes in.
 
 > If DeepSeek is a lightweight model, isn't it going to be less efficient?
