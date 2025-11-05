@@ -46,7 +46,7 @@ _BS in Computer Science (Expected Aug 2026)_
 ### 🧬 Team Leader — LLM Watermark Project *(Yonsei Univ.)*
 📅 Aug 2025 – Ongoing  
 
-> - Designing a robust watermark injection algorithm for open-source LLMs, aiming for >95% fidelity rate against common model editing attacks.
+> - Designing a robust watermark injection algorithm for open-source LLMs, aiming for a relative change in perplexity (PPL) of less than 5% compared to unwatermarked text.
 
 ### 💹 AI Finance Agent using MCP Server  
 🏆 *Koscom AI Agent Challenge 2025 Finalist*  
@@ -65,7 +65,6 @@ _BS in Computer Science (Expected Aug 2026)_
 | **Languages** | C++, C, Python |
 | **Frameworks & Libraries** | PyTorch, FastAPI, Pandas, XLM-ROBERTa |
 | **Tools & Platforms** | Linux, Docker, Git/GitHub, VS Code, Xcode |
-| **Problem Solving** | Solved **400+ algorithmic problems (C++)** on Baekjoon, demonstrating strong CS fundamentals |
 
 ---
 
