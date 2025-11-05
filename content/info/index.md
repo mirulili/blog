@@ -36,8 +36,9 @@ _BS in Computer Science (Expected Aug 2026)_
 
 ## 🎯 Areas of Interest
 
-> - Generative AI & LLM  
-> - Software Development (Backend / System Programming)
+> - AI Agent and LLM Logic Design
+> - MCP Server Development, Enhancing Generative AI Usability
+> - Software and Service Design
 
 ---
 
@@ -68,7 +69,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 ---
 
-## 💼 Extracurricular
+## 💼 Activities & Engagements
 
 ### 🌏 Working Holiday Program — *Sydney, Australia*  
 📅 Mar 2023 – Nov 2023  
