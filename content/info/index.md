@@ -12,8 +12,6 @@ menu:
 
 
 
------
-
 # **Heeji Kang**
 📧 heejikang.miru(at)gmail.com 😺 [Github](https://github.com/mirulili) 🌐 [Website](https://mirulili.github.io) ✅ [BOJ Profile](https://www.acmicpc.net/user/whdmsgkfn)
 
@@ -44,11 +42,6 @@ _BS in Computer Science (Expected Aug 2026)_
 
 ## 🚀 Projects
 
-### 🧬 Team Leader — LLM Watermark Project *(Yonsei Univ.)*
-📅 Aug 2025 – Ongoing  
-
-> - Designing a robust watermark injection algorithm for open-source LLMs, aiming for a relative change in perplexity (PPL) of less than 5% compared to unwatermarked text.
-
 ### 💹 AI Finance Agent using MCP Server  
 🏆 *Koscom AI Agent Challenge 2025 Finalist*  
 📅 Sep 2025 – Ongoing  
@@ -56,6 +49,11 @@ _BS in Computer Science (Expected Aug 2026)_
 > - Built an AI agent for stock recommendation using **MCP Server** and **FastAPI (Python)**.  
 > - Implemented **momentum-based scoring** integrated with **news sentiment analysis (XLM-ROBERTa)**.  
 > - 🛠 Tools: Python, Pandas, PyTorch, Docker  
+
+### 🧬 Team Leader — LLM Watermark Project *(Yonsei Univ.)*
+📅 Aug 2025 – Ongoing  
+
+> - Designing a robust watermark injection algorithm for open-source LLMs, aiming for a relative change in perplexity (PPL) of less than 5% compared to unwatermarked text.
 
 ---
 
@@ -75,7 +73,6 @@ _BS in Computer Science (Expected Aug 2026)_
 📅 Mar 2023 – Nov 2023  
 
 > - Developed cross-cultural communication skills.  
-> - Received personal mentorship from a senior engineer at a leading tech company.  
 
 ### 💖 Member — Bon Bon Volunteering Club *(Yonsei Univ.)*  
 📅 Mar 2021 – Jun 2021  
@@ -98,5 +95,3 @@ _BS in Computer Science (Expected Aug 2026)_
 | Korean | Native |  |
 | English | IELTS | 7.0 |
 | English | OPIC | IH |
-
----
