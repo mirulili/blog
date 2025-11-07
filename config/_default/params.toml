@@ -14,7 +14,7 @@ customText = ""
 
 [sidebar]
 emoji = "☁️"
-subtitle = "Computer Science student trained in CS principles. Experienced in developing AI agents and applications based on LLM, with focus on GenerativeAI and practical software development. Proficient in C + +, C, and Python with hands-on experience in PyTorch and Docker environments."
+subtitle = "Computer Science student experienced in developing AI agents and applications based on LLM, with focus on practical software development."
 
 [sidebar.avatar]
 enabled = true
