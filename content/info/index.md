@@ -16,12 +16,11 @@ menu:
 📧 heejikang.miru(at)gmail.com 😺 [Github](https://github.com/mirulili) 🌐 [Website](https://mirulili.github.io) ✅ [BOJ Profile](https://www.acmicpc.net/user/whdmsgkfn)
 
 
-
 > 🎓 **Computer Science student** trained in CS principles, proven by solving **400+ algorithmic problems** primarily using C++.  
 > 🤖 Experienced in **AI agent & LLM-based applications**, focusing on Generative AI and practical software development.  
 > 💡 Proficient in **C++, C, Python**, with hands-on experience in **PyTorch** and **Docker** environments.
 
-
+---
 
 ## 🎓 Education
 
@@ -30,7 +29,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 - 📘 Relevant Coursework: Data Structures, Operating Systems, Machine Learning
 
-
+---
 
 ## 🎯 Areas of Interest
 
@@ -38,7 +37,7 @@ _BS in Computer Science (Expected Aug 2026)_
 > - MCP Server Development, Enhancing Generative AI Usability
 > - Software and Service Design
 
-
+---
 
 ## 🚀 Projects
 
@@ -55,7 +54,7 @@ _BS in Computer Science (Expected Aug 2026)_
 
 > - Designing a robust watermark injection algorithm for open-source LLMs, aiming for a relative change in perplexity (PPL) of less than 5% compared to unwatermarked text.
 
-
+---
 
 ## 🧠 Technical Skills
 
@@ -65,7 +64,7 @@ _BS in Computer Science (Expected Aug 2026)_
 | **Frameworks & Libraries** | PyTorch, FastAPI, Pandas, XLM-ROBERTa |
 | **Tools & Platforms** | Linux, Docker, Git/GitHub, VS Code, Xcode |
 
-
+---
 
 ## 💼 Activities & Engagements
 
@@ -86,7 +85,7 @@ _BS in Computer Science (Expected Aug 2026)_
 > - Provided educational mentoring to out-of-school youth.  
 > - Focused on instructional clarity and adapting to diverse learning environments.  
 
-
+---
 
 ## 🌐 Languages
 
